@@ -116,17 +116,20 @@
 
       // Your code here...
       $(".number").on("click", function () {
-        alert($(this).attr("value"));
+        $("#first-number").text($(this).attr("value"));
       });
       $(".operator").on("click", function () {
-        alert($(this).attr("value"));
+        $("#operator").text($(this).attr("value"));
       });
 
       $(".equal").on("click", function () {
-        alert($(this).attr("value"));
+        $("#second-number").text($(this).attr("value"));
       });
       $(".clear").on("click", function () {
-        alert($(this).attr("value"));
+        $("#first-number").empty();
+        $("#second-number").empty();
+        $("#operator").empty();
+        $("#result").empty();
       });
 
 
